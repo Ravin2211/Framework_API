@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Regression Suite" parallel="tests" thread-count="2">
+    <!-- Listener for ExtentReports -->
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+    <!-- Test 1: API Login Tests -->
+    <test name="CombinedTest">
+        <classes>
+            <class name="api.test.DataDrivenTest"/>
+            <class name="api.test.UserTest"/>
+        </classes>
+    </test>
+</suite>
