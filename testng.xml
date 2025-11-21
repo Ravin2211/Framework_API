@@ -7,8 +7,7 @@
     <!-- Test 1: API Login Tests -->
     <test name="CombinedTest">
         <classes>
-            <class name="api.test.DataDrivenTest"/>
-            <class name="api.test.UserTest"/>
+            <class name="api.test.UserTestProp"/>
         </classes>
     </test>
 </suite>
